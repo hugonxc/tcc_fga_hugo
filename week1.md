@@ -1,4 +1,4 @@
-# Relatório semnal
+# Relatório semanal
 
 ## Resultados para Atividades planejadas - semana 01
 
