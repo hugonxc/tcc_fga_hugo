@@ -1,6 +1,6 @@
 ## Projeto TCC Hugo
 
-1. Buscar projetos de software livre para composição musical, coletar nome, URL, licença e data do último release.
+1. :ok: Buscar projetos de software livre para composição musical, coletar nome, URL, licença e data do último release. **feito:** [week1](week1.md)
 
 2. Avaliar a usabilidade em termos de facilidade de instalação e uso das funções principais básicas.
 
