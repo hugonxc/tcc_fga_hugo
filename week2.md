@@ -32,3 +32,67 @@ Entretanto o *Chord pulse* apresenta falhas ao limitar os estilos apenas aos exi
 
 É um software voltado aos dispositivos mobile, iOS e Android. Possui como principal foco a criação e execução rápida de ("nome da notação de backtrack"). Assim como o *Chord pulse* apresenta boas funcionalidades para a execução e controle da backtrack. Possui também um forúm onde os usuários podem compartilhar músicas entre si, ficando assim mais fácil o acesso a canções e um sistema de exportação das canções em diversos formatos: PDF, MusicXML, iReal format, etc.
 No entanto, assim como os outros citados, não possibilita a criação e personalização dos estilos musicais que a banda virtual executa. O software deixa a desejar quanto a usabilidade do editor de acordes, este é bastante confuso e desprende muitos clicas para utilização. Isso prejudica a criação de ("nome da notação de backtrack") de forma mais rápida, deixando assim o processo muito mais trabalhoso e cansativo.
+
+### Scorewriters livres
+
+Retirando da lista anteriormente disposta temos alguns candidatos que seguiram uma bateria de testes para verificar sua utilidade para o projeto. Vão ser considerados o uso na ferramenta, a escrita do código e a forma de armazenamento do código.
+
+- Aria Maestosa - não funfa
+
+Muitas dependencias para instalar:
+wxwidgets
+libwxgtk3.0-dev
+libwebkitgtk-3.0-dev
+gir1.2-glib-2.0
+libgtk-3-dev
+libasound2-dev
+Dificil de instalar e não é o que imagino, tá mais pra um grande piano roll pra composição
+
+
+- Denemo - também não
+Instalei dependencias:
+  - intltool
+  Deu treta com libguile-1.8 também
+Não consegui instalar mais rodei no wine e aparenta não ser a solução correta, apenas escreve notas, teria que escrever em formação de acordes
+
+
+- Frescobaldi
+Instalei
+pip3 pyqt5
+pip3 python-ly
+
+Faltou proplerqt5. Não consegui executar bem também. E só serve para escrever e dps exportar para outros formatos.
+
+
+- Gregorio
+Também dificil de instalar e serve apenas para "escrita" nã reproduz som.
+
+- Impro-Visor
+
+
+- LilyPond
+Error com versão do guile no build
+Consigo instalar usando o .sh, tem que chamar como sudo
+Lê uma extensão .ly e gera pdf, não envolve audio
+
+- MuseScore
+install lame
+install libpulse-dev
+install libmp3lame-dev
+install qtbase5-dev qttools5-dev qttools5-dev-tools qtwebengine5-dev
+install qtscript5-dev libqt5xmlpatterns5-dev libqt5svg5-dev libqt5webkit5-dev
+
+
+- MusiXTeX
+Fiz o download do CTAN, mas também só serve para a escrita em latex e conversão para pdf ou outras coisas
+
+
+- Rosegarden
+
+
+- MMA
+- chord pad
+- lemma
+- easyabc
+- canorus
+- linux band
