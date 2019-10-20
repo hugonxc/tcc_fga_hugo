@@ -35,64 +35,32 @@ No entanto, assim como os outros citados, não possibilita a criação e persona
 
 ### Scorewriters livres
 
-Retirando da lista anteriormente disposta temos alguns candidatos que seguiram uma bateria de testes para verificar sua utilidade para o projeto. Vão ser considerados o uso na ferramenta, a escrita do código e a forma de armazenamento do código.
+Partindo da lista de Scorewriters existentes, produzida anteriormente, foram selecionados os projetos de software livre. Esses projetos foram _buildados_ a partir do código fonte e depois utilizados normalmente visando visualizar sua maturidade e experiência de usuário. Durante o proceso notou-se funcionalidades em comum entre os software. Com isso subdividiu-se a lista baseado nesses aspectos:
 
-- Aria Maestosa - não funfa
-
-Muitas dependencias para instalar:
-wxwidgets
-libwxgtk3.0-dev
-libwebkitgtk-3.0-dev
-gir1.2-glib-2.0
-libgtk-3-dev
-libasound2-dev
-Dificil de instalar e não é o que imagino, tá mais pra um grande piano roll pra composição
-
-
-- Denemo - também não
-Instalei dependencias:
-  - intltool
-  Deu treta com libguile-1.8 também
-Não consegui instalar mais rodei no wine e aparenta não ser a solução correta, apenas escreve notas, teria que escrever em formação de acordes
-
-
-- Frescobaldi
-Instalei
-pip3 pyqt5
-pip3 python-ly
-
-Faltou proplerqt5. Não consegui executar bem também. E só serve para escrever e dps exportar para outros formatos.
-
-
-- Gregorio
-Também dificil de instalar e serve apenas para "escrita" nã reproduz som.
-
-- Impro-Visor
-
-
-- LilyPond
-Error com versão do guile no build
-Consigo instalar usando o .sh, tem que chamar como sudo
-Lê uma extensão .ly e gera pdf, não envolve audio
-
-- MuseScore
-install lame
-install libpulse-dev
-install libmp3lame-dev
-install qtbase5-dev qttools5-dev qttools5-dev-tools qtwebengine5-dev
-install qtscript5-dev libqt5xmlpatterns5-dev libqt5svg5-dev libqt5webkit5-dev
-
-
-- MusiXTeX
-Fiz o download do CTAN, mas também só serve para a escrita em latex e conversão para pdf ou outras coisas
-
-
+**Sistema de tracks** - o software possibilita divisão dos instrumentos em faixas
+- Aria Maestosa
 - Rosegarden
 
+**Escrita em notação formal e Reprodução de aúdio durante a escrita** - o software utiliza a escrita formal como padrão e durante a escrita o respectivo som para cada nota é reproduzido. É possível ainda reproduzir a música na íntegra.    
+- Aria Maestosa
+- Canorus
+- Denemo
+- Easyabc
+- Impro-Visor
+- MuseScore
+- Rosegarden
 
-- MMA
-- chord pad
-- lemma
-- easyabc
-- canorus
-- linux band
+**Escrita em LaTEX e não há reprodução de áudio** - nesse aspecto os softwares não reproduzem áudio, apenas convertem de LaTEX para outros formatos como PDF, JPG.
+- Frescobaldi
+- Gregorio
+- LilyPond
+- MusiXTeX
+
+
+Durante o processo de pesquisa encontrei um novo software que apresentou a caracterstica de **escrita em linguagem própria** para geração automática de acompanhamento.
+- **MMA - Music MIDI Accompaniment:** Feito em python e executado em linha de comando, basicamente converte um arquivo _.mma_ contendo especificação de harmonia (usando notação de acordes) e estilo (grooves que também podem ser escritos), de forma própria, para um arquivo _.midi_ que pode ser executado por qualquer player de MIDI ou controlador externo. Para facilitar sua utilização outros projetos se originaram buscando criar GUI para o MMA. Entre eles temos os principais:
+
+- [LeMMA](https://github.com/geksiong/LeMMA)
+- [LinuxBand](https://github.com/noseka1/linuxband)
+
+Ambos possuem um editor para escrever os acordes que serão reproduzidos e escolher em qual estilo deve ser tocado. O LeMMA não abre arquivos anteriormente escritos, apenas cria novos. Nenhum dos dois cria ou edita os Grooves.
